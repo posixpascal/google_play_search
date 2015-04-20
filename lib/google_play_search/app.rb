@@ -14,8 +14,8 @@ module GooglePlaySearch
     end
 
 
-  	private
-  	def get_version()
+    private
+    def get_version()
       @google_play_html.search("div[itemprop='softwareVersion']").first.content.strip
     end
 
